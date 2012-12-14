@@ -1,4 +1,6 @@
 # Require any additional compass plugins here.
+additional_import_paths = ["/Library/Ruby/Gems/1.8/gems/zen-grids-1.2/stylesheets"]
+#require 'zen-grids'
 
 # Set this to the root of your project when deployed:
 http_path = "/"
