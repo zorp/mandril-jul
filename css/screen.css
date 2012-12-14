@@ -58,13 +58,60 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block; }
 
-/* line 14, ../sass/screen.scss */
+/**** Isotope Filtering ****/
+/* line 3, ../sass/isotope.scss */
+.isotope-item {
+  z-index: 2; }
+
+/* line 7, ../sass/isotope.scss */
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1; }
+
+/**** Isotope CSS3 transitions ****/
+/* line 15, ../sass/isotope.scss */
+.isotope,
+.isotope .isotope-item {
+  -webkit-transition-duration: 0.8s;
+  -moz-transition-duration: 0.8s;
+  -ms-transition-duration: 0.8s;
+  -o-transition-duration: 0.8s;
+  transition-duration: 0.8s; }
+
+/* line 23, ../sass/isotope.scss */
+.isotope {
+  -webkit-transition-property: height, width;
+  -moz-transition-property: height, width;
+  -ms-transition-property: height, width;
+  -o-transition-property: height, width;
+  transition-property: height, width; }
+
+/* line 31, ../sass/isotope.scss */
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+  -moz-transition-property: -moz-transform, opacity;
+  -ms-transition-property: -ms-transform, opacity;
+  -o-transition-property: -o-transform, opacity;
+  transition-property: transform, opacity; }
+
+/**** disabling Isotope CSS3 transitions ****/
+/* line 43, ../sass/isotope.scss */
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {
+  -webkit-transition-duration: 0s;
+  -moz-transition-duration: 0s;
+  -ms-transition-duration: 0s;
+  -o-transition-duration: 0s;
+  transition-duration: 0s; }
+
+/* line 15, ../sass/screen.scss */
 body {
   background-image: url("../images/bg-1_grey.jpg");
   background-size: cover;
   margin: 20px; }
 
-/* line 20, ../sass/screen.scss */
+/* line 21, ../sass/screen.scss */
 .container {
   *position: relative;
   *zoom: 1; }
@@ -76,14 +123,14 @@ body {
   .container:after {
     clear: both; }
 
-/* line 24, ../sass/screen.scss */
+/* line 25, ../sass/screen.scss */
 .item {
   position: relative;
   float: left;
   min-width: 150px;
   height: auto;
   padding: 30px 30px 0 30px; }
-  /* line 31, ../sass/screen.scss */
+  /* line 32, ../sass/screen.scss */
   .item .border {
     position: absolute;
     top: 5px;
@@ -92,7 +139,7 @@ body {
     height: auto;
     z-index: 999;
     overflow: hidden; }
-    /* line 40, ../sass/screen.scss */
+    /* line 41, ../sass/screen.scss */
     .item .border img {
       width: 200px;
       height: auto; }

@@ -109,11 +109,10 @@
   </div>
   <script>
     $(document).ready(function(){
-      /*$('.container').isotope({
-        masonry: {
-          columnWidth: 150
-        }
-      });*/
+      $('.container').isotope({
+        itemSelector : '.item',
+        layoutMode : 'fitRows'
+      });
       $(".container").fitVids();
     });
   </script>

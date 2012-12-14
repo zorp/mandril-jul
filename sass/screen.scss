@@ -6,8 +6,9 @@
 @import "compass/reset";
 @import "compass/css3";
 @import "zen";
+@import "isotope.scss";
 
-$zen-grid-width: 1100px;
+$zen-grid-width: 800px;
 $zen-column-count: 6;
 $zen-gutter-width: 10px; 
 
