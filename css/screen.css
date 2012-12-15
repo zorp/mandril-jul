@@ -111,26 +111,15 @@ body {
   background-size: cover;
   margin: 20px; }
 
-/* line 21, ../sass/screen.scss */
-.container {
-  *position: relative;
-  *zoom: 1; }
-  /* line 52, ../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.2/stylesheets/zen/_grids.scss */
-  .container:before, .container:after {
-    content: "";
-    display: table; }
-  /* line 56, ../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.2/stylesheets/zen/_grids.scss */
-  .container:after {
-    clear: both; }
-
 /* line 25, ../sass/screen.scss */
 .item {
   position: relative;
   float: left;
-  min-width: 150px;
-  height: auto;
-  padding: 30px 30px 0 30px; }
-  /* line 32, ../sass/screen.scss */
+  width: 150px;
+  height: 143px;
+  padding: 30px 30px 0 30px;
+  margin: 0 10px 15px 10px; }
+  /* line 33, ../sass/screen.scss */
   .item .border {
     position: absolute;
     top: 5px;
@@ -139,9 +128,23 @@ body {
     height: auto;
     z-index: 999;
     overflow: hidden; }
-    /* line 41, ../sass/screen.scss */
+    /* line 42, ../sass/screen.scss */
     .item .border img {
       width: 200px;
+      height: auto; }
+
+/* line 49, ../sass/screen.scss */
+.width2 {
+  width: 380px;
+  height: 316px; }
+  /* line 53, ../sass/screen.scss */
+  .width2 .border {
+    width: 440px;
+    top: 0;
+    left: 0; }
+    /* line 58, ../sass/screen.scss */
+    .width2 .border img {
+      width: 440px;
       height: auto; }
 
 /*.item:hover {
