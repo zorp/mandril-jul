@@ -27,11 +27,12 @@ body {
   float: left;
   width: 150px;
   height: 143px;
-  padding: 30px 30px 0 30px;
-  margin: 0 10px 15px 10px;
+  /*padding: 30px 30px 0 30px;
+  margin: 0 10px 15px 10px;*/
 
   .border {
-    position: absolute;
+    display: none;
+    /*position: absolute;
     top: 5px;
     left: 5px;
     width: 200px;
@@ -42,15 +43,15 @@ body {
     img {
       width: 200px;
       height: auto;
-    }
+    }*/
   }
 }
 
 .width2 {
   width: 380px;
-  height: 316px;
+  height: 286px;
 
-  .border {
+  /*.border {
     width: 440px;
     top: 0;
     left: 0;
@@ -59,7 +60,7 @@ body {
       width: 440px;
       height: auto;
     }
-  }
+  }*/
 }
 
 /*.item:hover {
